@@ -1,1 +1,5 @@
-echo hello, world
+#!/bin/bash -eux
+
+trap 'echo whoops!; exit 0' INT
+sleep 60
+echo hello, ${1:-world}
