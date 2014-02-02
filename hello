@@ -1,1 +1,3 @@
-echo hello, world
+#!/bin/bash -eux
+
+echo hello, ${1:-world}
